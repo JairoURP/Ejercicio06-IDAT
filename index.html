@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+
+    <!-- Realizando la precarga, cuando se carga una página se cargan tres cosas: El HTML, el CSS y el JavaScript, cuando haces un reload haces que cierto css se cargue a la misma vez que el HTML. -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <!-- Linkeando el HTML con el normalize, estandarizando sin depender del navegador. -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Linkeando el HTML con el CSS. -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Importando el grupo de fuentes que se utilizará de Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Es convenible usar section en grupos de elementos que se puede reutilizar   -->
+    <section class="contenedor">
+
+        <div class="red-box">
+            <img class="image1" src="img/star-wars.png" alt="star-wars">
+        </div>
+
+        <div class="blue-box">
+            <img class="image2" src="img/casco.png" alt="casco">
+            
+            <div class="texto-venta">
+                <h1 class="title">casco <br> completo de <br> star wars</h1>
+                <h2 class="price">S/ 599.99</h2>
+                <p class="size">tamaño</p>
+                
+                <ul>
+                    <li class="is-active">s</li>
+                    <li>m</li>
+                    <li>l</li>
+                    <li>xl</li>
+                </ul>
+                
+                <button class="button-add">añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
